@@ -12,7 +12,7 @@ const viewed = [];
 const labels = [];
 const pics = [leftImage, centerImage, rightImage];
 const list = document.getElementById('productlist');
-const totalClicks = 0;
+let totalClicks = 0;
 const views = [];
 const votes = [];
 
@@ -36,7 +36,7 @@ function displayPics(){
     }
   }
   
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
+  // DONE: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
   // ANSWER: the console log statement is outside the function and violates the scope of a 'let' statement, which is scoped only within the function. Because it is outsidde the function it threw an 'undefined' error because outside of the function, it is undefined.
   console.log(viewed);
 
